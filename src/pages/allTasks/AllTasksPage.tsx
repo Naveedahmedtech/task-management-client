@@ -1,4 +1,3 @@
-import React from 'react'
 import AllTasks from '../components/tasks/AllTasks'
 
 const AllTasksPage = () => {
