@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { Formik, Form, FormikHelpers } from 'formik';
 import InputField from '../../components/InputField';
 import { loginSchema } from '../../utils/formSchema';
@@ -41,6 +41,21 @@ const SignIn = () => {
       setSubmitting(false);
     }
   }, [loginUser, navigate, dispatch]);
+
+
+  useEffect(() => {
+    const fetchAwen = async () => {
+      try {
+        
+        const response = await fetch(`https://testing-dep-sigma.vercel.app/api`);
+        const data = await response.json();
+        console.log(data)
+      } catch (error) {
+       console.log("ERROR") 
+      }
+    }
+    fetchAwen();
+  }, [])
 
 
   return (
