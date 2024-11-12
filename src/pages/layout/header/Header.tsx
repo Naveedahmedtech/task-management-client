@@ -33,15 +33,15 @@ const Header = () => {
             {/* Sidebar Container with Smooth Animation */}
             {isSidebarOpen && (
                 <div
-                    className="w-60 transition-transform duration-500 ease-in-out absolute md:relative"
+                    className="w-60 transition-transform duration-500 ease-in-out absolute md:relative z-10"
                 >
                     <LeftSidebar toggleSidebar={toggleSidebar} />
                 </div>
             )}
 
             {/* Main Content Area */}
-            <div className={`flex-1 flex flex-col overflow-auto mt-10 ${isSidebarOpen ? "ml-6" : "ml-5"} transition-all duration-500`}>
-                <div className="p-4 pt-24 md:pt-12 custom-scrollbar">
+            <div className={`flex-1 flex flex-col overflow-auto mt-10 ${isSidebarOpen ? "ml-6" : "ml-0"} transition-all duration-500`}>
+                <div className="py-4 pt-24 md:pt-12 custom-scrollbar">
                     <Outlet />
                 </div>
             </div>
