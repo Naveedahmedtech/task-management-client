@@ -51,7 +51,7 @@ const AddUser: React.FC = () => {
                         <button
                             type="button"
                             onClick={() => setFieldValue('password', generateRandomPassword())}
-                            className="text-text bg-primary p-2 rounded text-xs focus:outline-none mr-2"
+                            className="text-text bg-[#7A23FF]  p-2 rounded text-xs focus:outline-none mr-2"
                         >
                             Generate Password
                         </button>
