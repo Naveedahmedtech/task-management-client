@@ -70,7 +70,7 @@ const AddUser: React.FC = () => {
                     <button
                         type="submit"
                         disabled={isSubmitting || isLoading}
-                        className="px-4 py-2 bg-primary text-white rounded hover:bg-primary-dark"
+                        className="mt-3 btn border-2 border-[#7A23FF] bg-[#7A23FF] px-5 py-2 text-text rounded-[7px] hover:bg-transparent hover:text-[#7A23FF] transition-all"
                     >
                         {isLoading ? 'Adding...' : 'Add User'}
                     </button>

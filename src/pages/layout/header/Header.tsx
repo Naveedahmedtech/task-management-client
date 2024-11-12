@@ -41,7 +41,7 @@ const Header = () => {
 
             {/* Main Content Area */}
             <div className={`flex-1 flex flex-col overflow-auto mt-10 ${isSidebarOpen ? "ml-6" : "ml-0"} transition-all duration-500`}>
-                <div className="py-4 pt-24 md:pt-12 custom-scrollbar">
+                <div className="py-4 px-2 pt-24 md:pt-12 custom-scrollbar">
                     <Outlet />
                 </div>
             </div>
