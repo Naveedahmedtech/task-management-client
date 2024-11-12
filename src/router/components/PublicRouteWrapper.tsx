@@ -11,13 +11,13 @@ const PublicRouteWrapper = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [logout] = useLogoutMutation();
 
-    const fetchCsrfToken = async () => {
-        try {
-            await apiFetch('csrf-token', { method: 'GET' });
-        } catch (error) {
-            console.error('Error while fetching CSRF token:', error);
-        }
-    };
+    // const fetchCsrfToken = async () => {
+    //     try {
+    //         await apiFetch('csrf-token', { method: 'GET' });
+    //     } catch (error) {
+    //         console.error('Error while fetching CSRF token:', error);
+    //     }
+    // };
 
     const fetchUserData = async () => {
         try {
@@ -41,7 +41,7 @@ const PublicRouteWrapper = () => {
     useEffect(() => {
         const initialize = async () => {
             setIsLoading(true);
-            await fetchCsrfToken(); 
+            // await fetchCsrfToken(); 
             await fetchUserData(); 
         };
         initialize();

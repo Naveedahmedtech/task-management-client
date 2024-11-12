@@ -47,7 +47,7 @@ const SignIn = () => {
     const fetchAwen = async () => {
       try {
         
-        const response = await fetch(`https://testing-dep-sigma.vercel.app/api`);
+        const response = await fetch(`https://testing-dep-two.vercel.app/api/v1/auth`);
         const data = await response.json();
         console.log(data)
       } catch (error) {

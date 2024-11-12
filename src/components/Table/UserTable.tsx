@@ -39,7 +39,7 @@ const UserTable: React.FC<UserTableProps> = ({ users, role, selectedUsers, onUse
                             {role === 'manager' ? (
                                 <button
                                     onClick={() => navigate(`/manager/${user.id}/tasks`)}
-                                    className="px-2 py-1 bg-primary text-white rounded hover:bg-textHover transition"
+                                    className="px-2 py-1 bg-primary text-text rounded  transition"
                                 >
                                     View Tasks
                                 </button>

@@ -16,7 +16,7 @@ const ManagerTasks: React.FC = () => {
 
     return (
         <div className="p-4">
-            <h2 className="text-2xl font-semibold mb-4">Manager's Assign Tasks</h2>
+            <h2 className="text-2xl font-semibold mb-4">Users Assigned to Manager</h2>
             {isLoading ? (
                 <p>Loading tasks...</p>
             ) : error ? (
