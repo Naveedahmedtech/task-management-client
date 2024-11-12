@@ -17,8 +17,8 @@ Ensure you have the following installed:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone <repository-url>
-   cd <project-folder>
+   git git@github.com:Naveedahmedtech/task-management-client.git
+   cd task-management-client
 
 2. Install the dependencies:
 npm install
