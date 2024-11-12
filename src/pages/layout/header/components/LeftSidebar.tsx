@@ -35,7 +35,7 @@ const LeftSidebar: React.FC<LeftSidebarProps> = ({ toggleSidebar }) => {
   const accessibleLinks = links.filter(link => link.roles.includes(userRole));
 
   return (
-    <div className={`flex flex-col justify-between h-screen transition-all duration-300 bg-backgroundShade1 p-4`}>
+    <div className={`flex flex-col justify-between h-screen transition-all duration-300 bg-backgroundShade1 p-4 z-50`}>
       <div className="flex items-center justify-between mb-6">
         <Text className="text-2xl lg:text-xl text-text font-normal cursor-pointer" onClick={handleHome}>
           {APP_NAME}
