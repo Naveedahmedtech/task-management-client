@@ -2,6 +2,9 @@
 
 ## Live Demo
 You can view the live demo of the project here: [Task Manager](https://naveed-task-manager.netlify.app/)
+default credentails for testing: 
+email: admin@gamil.com
+password: admin
 
 ## Getting Started
 
@@ -17,7 +20,7 @@ Ensure you have the following installed:
 
 1. Clone the repository to your local machine:
    ```bash
-   git git@github.com:Naveedahmedtech/task-management-client.git
+   git clone git@github.com:Naveedahmedtech/task-management-client.git
    cd task-management-client
 
 2. Install the dependencies:
